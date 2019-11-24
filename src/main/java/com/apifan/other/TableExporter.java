@@ -51,6 +51,8 @@ public class TableExporter {
         } else if ("oracle".equalsIgnoreCase(dbType)) {
             driverName = ORACLE_DRIVER;
             url = String.format(ORACLE_URL, jdbcParam.getHost(), jdbcParam.getPort(), jdbcParam.getServiceName());
+        } else {
+            throw new RuntimeException("暂不支持此数据库类型");
         }
         try {
             Class.forName(driverName);
