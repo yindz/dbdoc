@@ -3,12 +3,12 @@ package com.apifan.other;
 /**
  * JDBC参数
  *
- * @author yinzhili
+ * @author yin
  */
 public class JdbcParam {
 
     /**
-     * 数据库类型:mysql/oracle
+     * 数据库类型:mysql/oracle，小写
      */
     private String dbType;
 

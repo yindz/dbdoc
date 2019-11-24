@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * 数据表元数据导出工具
  *
- * @author yinzhili
+ * @author yin
  */
 public class TableExporter {
     private static final String MYSQL_URL = "jdbc:mysql://%s:%s/%s?useUnicode=true&autoReconnect=true&characterEncoding=utf8";

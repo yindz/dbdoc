@@ -3,7 +3,7 @@ package com.apifan.other;
 /**
  * 列基本属性
  *
- * @author yinzhili
+ * @author yin
  */
 public class ColumnInfo {
 
