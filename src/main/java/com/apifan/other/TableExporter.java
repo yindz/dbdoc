@@ -39,6 +39,9 @@ public class TableExporter {
      * @param jdbcParam JDBC参数
      */
     public TableExporter(JdbcParam jdbcParam) {
+        if (jdbcParam == null) {
+            throw new IllegalArgumentException("JDBC参数为null");
+        }
         if (!"mysql".equalsIgnoreCase(jdbcParam.getDbType()) && !"oracle".equalsIgnoreCase(jdbcParam.getDbType())) {
             throw new IllegalArgumentException("未知的数据库类型" + jdbcParam.getDbType());
         }
